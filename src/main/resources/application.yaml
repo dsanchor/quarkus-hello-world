@@ -1,7 +1,21 @@
-environment:
-  name: local
-quarkus:
-  kubernetes-config:
-    enabled: false
-    #config-maps:
-    #  - quarkus-hello-world
+# dev – Activated when in development mode (i.e. mvn quarkus:dev)
+"%dev":
+  environment:
+    name: local
+  quarkus:
+    kubernetes-config:
+      enabled: false
+# test – Activated when running tests (i.e. mvn test)
+"%test":
+  environment:
+    name: local
+  quarkus:
+    kubernetes-config:
+      enabled: false
+# prod – The default profile when not running in development or test mode
+"%prod":
+  quarkus:
+    kubernetes-config:
+      enabled: true
+      config-maps:
+        - quarkus-hello-world
