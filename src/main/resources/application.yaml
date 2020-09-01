@@ -1,5 +1,6 @@
 # dev – Activated when in development mode (i.e. mvn quarkus:dev)
 "%dev":
+  message: hello
   environment:
     name: local
   quarkus:
@@ -7,6 +8,7 @@
       enabled: false
 # test – Activated when running tests (i.e. mvn test)
 "%test":
+  message: hello
   environment:
     name: local
   quarkus:
@@ -19,3 +21,4 @@
       enabled: true
       config-maps:
         - quarkus-hello-world
+        - global-ops-quarkus-hello-world

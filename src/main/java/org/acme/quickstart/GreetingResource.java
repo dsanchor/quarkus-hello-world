@@ -13,9 +13,12 @@ public class GreetingResource {
     @ConfigProperty(name = "environment.name")
     String environment;
 
+    @ConfigProperty(name = "message")
+    String message;
+
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return "hello " + environment;
+        return message + " " + environment;
     }
 }
