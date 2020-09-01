@@ -20,5 +20,5 @@
     kubernetes-config:
       enabled: true
       config-maps:
-        - global-ops-quarkus-hello-world
         - quarkus-hello-world
+        - global-ops-quarkus-hello-world
