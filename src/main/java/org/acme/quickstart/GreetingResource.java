@@ -5,15 +5,17 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+import org.eclipse.microprofile.config.inject.ConfigProperty;
+
 @Path("/hello")
 public class GreetingResource {
 
-
-    private static final String ENVIRONMENT = "ENVIRONMENT";
+    @ConfigProperty(name = "environment.name")
+    String environment;
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return "HHello " + System.getenv(ENVIRONMENT);
+        return "hello " + environment;
     }
 }
