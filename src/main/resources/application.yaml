@@ -1,2 +1,7 @@
 environment:
   name: local
+quarkus:
+  kubernetes-config:
+    enabled: false
+    #config-maps:
+    #  - quarkus-hello-world
