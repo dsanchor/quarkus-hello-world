@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+   name: quarkus-hello-world
+data:
+  application.yaml: |-
+    message: hola
+    environment:
+      name: production
