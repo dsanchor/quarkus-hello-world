@@ -4,6 +4,6 @@ metadata:
    name: quarkus-hello-world
 data:
   application.yaml: |-
-    message: hello
+    message: hola
     environment:
       name: dev
