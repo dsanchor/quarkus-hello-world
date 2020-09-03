@@ -21,4 +21,4 @@
       enabled: true
       config-maps:
         - quarkus-hello-world
-        - global-ops-quarkus-hello-world
+#        - global-ops-quarkus-hello-world
