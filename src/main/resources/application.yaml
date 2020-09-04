@@ -19,6 +19,9 @@
   quarkus:
     kubernetes-config:
       enabled: true
+      # next, lsit of configmaps to be used by the app
+      # from top to bottom, less to high priority
       config-maps:
         - quarkus-hello-world
+        - env-ops-quarkus-hello-world
         - global-ops-quarkus-hello-world
