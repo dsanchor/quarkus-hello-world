@@ -19,6 +19,6 @@ public class GreetingResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return message + " " + environment + "! DevNation rocks";
+        return message + " " + environment + "! This is awesome!";
     }
 }
