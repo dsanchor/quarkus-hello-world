@@ -22,5 +22,3 @@ public class GreetingResource {
         return message + " " + environment + "! This is our demo environment!";
     }
 }
-
-
