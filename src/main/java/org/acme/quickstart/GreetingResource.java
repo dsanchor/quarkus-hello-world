@@ -19,6 +19,6 @@ public class GreetingResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return message + " " + environment + "! yuyuuuyyhhhyuuyuyTyuugtu byb yy yr demo eeenvironment with webhook!";
+        return message + " " + environment + "! hyuuyuyTyuugtu byb yy yr demo eeenvironment with webhook!";
     }
 }
