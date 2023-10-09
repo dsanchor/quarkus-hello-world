@@ -15,7 +15,7 @@ public class GreetingResourceTest {
           .when().get("/hello")
           .then()
              .statusCode(200)
-             .body(is("hello local! This is our demo environment!"));
+             .body(is("hello local! This is our demo multi environment!"));
     }
 
 }
